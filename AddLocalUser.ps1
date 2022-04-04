@@ -4,3 +4,10 @@ New-LocalUser -Name "user_name" `
 -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd01" -Force) `
 -PasswordNeverExpires `
 -AccountNeverExpires 
+
+# add user to administrators group
+
+Add-LocalGroupMember -Group "Administrators" -Member ""
+
+
+
