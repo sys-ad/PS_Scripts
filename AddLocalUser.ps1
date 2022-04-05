@@ -10,4 +10,10 @@ New-LocalUser -Name "user_name" `
 Add-LocalGroupMember -Group "Administrators" -Member ""
 
 
+# Change admin username
+
+Rename-LocalUser -Name "oldname" -NewName "newname_placeholdr" 
+
+Get-LocalUser  
+
 
